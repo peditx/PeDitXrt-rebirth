@@ -45,7 +45,7 @@
 
 
 ## تشکر ویژه:
-متشکرم از تیم‌های پشتیبانی و توسعه [OpenWrt](https://openwrt.org/)، [PeDitX](https://github.com/peditx)، [ImmortalWrt](https://github.com/immortalwrt)، [Passwall](https://github.com/xiaorouji/openwrt-passwall) و [HelloWorld](https://github.com/jerrykuku/luci-app-vssr) برای زحماتشان و ارائه این ابزارهای مفید.
+متشکرم از تیم‌های پشتیبانی و توسعه [OpenWrt](https://openwrt.org/)، [PeDitX](https://github.com/peditx)، [ImmortalWrt](https://github.com/immortalwrt)، [Passwall](https://github.com/xiaorouji/openwrt-passwall) و [HelloWorld](https://github.com/jerrykuku/luci-app-vssr) برای زحماتشان و ارائه ابزارهای مفید.
 
 
 ---
