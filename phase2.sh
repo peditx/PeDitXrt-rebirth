@@ -12,6 +12,17 @@ opkg update
 # Add force_space option to opkg.conf
 echo option force_space >> /etc/opkg.conf
 
+# Download and install luci-theme-argon
+wget -O /tmp/luci-theme-argon_2.3_all.ipk https://github.com/peditx/PeDitXrt-rebirth/raw/main/apps/luci-theme-argon_2.3_all.ipk
+opkg install /tmp/luci-theme-argon_2.3_all.ipk
+
+# Download and install luci-app-argon-config
+wget -O /tmp/luci-app-argon-config_0.9_all.ipk https://github.com/peditx/PeDitXrt-rebirth/raw/main/apps/luci-app-argon-config_0.9_all.ipk
+opkg install /tmp/luci-app-argon-config_0.9_all.ipk
+
+# Install luci-lib-ipkg
+opkg install luci-lib-ipkg
+
 # Ask for swap size
 read -p "Enter swap size in MB (press Enter for default 1024MB): " swap_size
 swap_size=${swap_size:-1024}
@@ -32,7 +43,6 @@ uci set system.@system[0].hostname=PeDitXrt
 uci commit system
 
 # Install and configure packages
-opkg install luci-lib-ipkg
 opkg remove dnsmasq
 opkg install dnsmasq-full
 opkg install kmod-nft-tproxy kmod-nft-socket
